@@ -1,6 +1,21 @@
-﻿body { background-color:#000000; background-image:url(../Images/record.jpg);
+﻿body { background-color:#000000; 
+       background-image:url(../Images/recordmap.jpg);
+
 }
-ul {
+
+.Header {
+    font-size: x-large;
+    font-family: Impact;
+    text-align: center;
+ 
+}
+/* h1 is for the Default.aspx*/
+h1 {
+    color: #111;
+}
+/* end of h1 for Default.aspx*/
+
+.navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -8,11 +23,11 @@ ul {
     background-color: #333;
 }
 
-li {
+.navigation li {
     float: left;
 }
 
-li a {
+.navigation li a {
     display: block;
     color: white;
     text-align: center;
@@ -20,27 +35,19 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.navigation li a:hover {
     background-color: #111;
 }
-    </style>
-    <title>S2W RECORD STORE</title>
-	<meta charset="utf-8" />
-</head>
 
-<body background="recordmap.jpg">
-
-    <h1 style="color:black; text-align:center; font-family:'Bernard MT';">
-        Spin 2 Win Record Store
-    </h1>
+googleMap {
     
-    <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+}
 
-<h2 style="color:white;">Welcome to your one-stop music destination</h2>
+footer {
+    color: white;
 
-    <h4 style="color:#787676;">Support your local record store</h4>
+}
+
+p {
+    color:white;
+}

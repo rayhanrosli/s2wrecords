@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="Contact.aspx" />
     <Content Include="CSS\s2wrecords.css" />
+    <Content Include="Js\JavaScript.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

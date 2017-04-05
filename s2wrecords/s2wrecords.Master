@@ -12,20 +12,24 @@
 <body>
 
     <form id="form1" runat="server">
-    <header>Spin2Win Record Store</header>
+        <div class="Header">
+            Spin2Win Record Store
+        </div>
+   
         <div>
-        <nav>
+        <nav class="navigation">
             <ul>
                 <li><a href="Default.aspx">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Product</a></li>
                 <li><a href="Contact.aspx">Contact</a></li>
+                <li><a href="">My Account</a></li>
             </ul>
         </nav>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
-        <footer>&copy; Spin2Win Records 2017</footer>
+        <footer><b>&copy; Spin2Win Records 2017</b></footer>
     </div>
     </form>
 </body>
