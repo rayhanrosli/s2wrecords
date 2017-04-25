@@ -10,19 +10,24 @@
     <h3>You can get in touch with us by using this contact form below if you have any questions</h3>
     
     <p><asp:Label ID="Label1" runat="server" Text="Name"></asp:Label></p>
-    <p><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></p>
+    <p><asp:TextBox ID="name" runat="server"></asp:TextBox>
+    <asp:RegularExpressionValidator ID="nameval" runat="server" ErrorMessage="Please Enter a Legit Name." ControlToValidate="name" ValidationExpression="^[a-zA-Z\s]+$"></asp:RegularExpressionValidator>
+    </p>
 
     <p><asp:Label ID="Label2" runat="server" Text="Email"></asp:Label></p>
-    <p><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></p>
-
-    <p><asp:Label ID="Label3" runat="server" text="Label"></asp:Label></p>
-    <p><asp:Textbox ID="TextBox3" runat="server"></asp:Textbox></p>
+    <p><asp:TextBox ID="email" runat="server"></asp:TextBox>
+    <asp:RegularExpressionValidator ID="emailval" runat="server" ErrorMessage="Invalid Email! Please input the correct Email." ControlToValidate="email" ValidationExpression="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"></asp:RegularExpressionValidator>
+    </p>
+    
+    <p><asp:Label ID="Label3" runat="server" text="Subject"></asp:Label></p>
+    <p><asp:Textbox ID="subject" runat="server"></asp:Textbox></p>
 
     <p><asp:Label ID="Label4" runat="server" text="Your Message"></asp:Label></p>
-    <p><asp:Textbox ID="TextBox4" runat="server"></asp:Textbox></p>
+    <p><asp:Textbox ID="message" runat="server"></asp:Textbox></p>
 
-    <p><asp:Button ID="Button1" runat="server" Text="Send" /></p>
-
+    <asp:Button ID="Button1" runat="server" Text="Send" OnClick="Button1_Click" />
+   <p><asp:Label ID="label" runat="server"></asp:Label></p>
+    
  
     <h2>Where to Find Us</h2>
  
