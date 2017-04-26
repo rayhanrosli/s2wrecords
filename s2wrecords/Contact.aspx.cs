@@ -23,9 +23,9 @@ namespace s2wrecords
             client.Host = "smtp.gmail.com";
             client.Port = 587;
 
-            System.Net.NetworkCredential userpass = new System.Net.NetworkCredential("spin2winrecords@gmail.com", "vinylrecords");
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("spin2winrecords@gmail.com", "vinylrecords");
             client.UseDefaultCredentials = false;
-            client.Credentials = userpass;
+            client.Credentials = credentials;
 
             MailMessage msg = new MailMessage();
             msg.From = new MailAddress(email.Text);
@@ -33,16 +33,16 @@ namespace s2wrecords
 
             msg.Subject = subject.Text;
             msg.IsBodyHtml = true;
-            msg.Body = string.Format("From: " + name.Text + ",   Email: " + email.Text + ",   Message: " + message.Text);
+            msg.Body = string.Format("A message from " + name.Text + ",   Email: " + email.Text + ",   Message: " + message.Text);
 
             try
             {
                 client.Send(msg);
-                label.Text = "Your message has been successfully sent.";
+                label.Text = "Message has been successfully sent. Thank you for your message! We will get back to you as soon as we can.";
             }
             catch (Exception ex)
             {
-                label.Text = "Error occured while sending your message." + ex.Message;
+                label.Text = "Message Error: Please try again." + ex.Message;
             }
             name.Text = "";
             email.Text = "";

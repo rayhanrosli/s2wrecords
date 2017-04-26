@@ -35,7 +35,8 @@
 <div id="googleMap" style="width:400px;height:300px;"></div>
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFDDfYGWdUdAaPTw_Lc3g7sbrBAAA9Uh8&callback=myMap"></script>
+<script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFDDfYGWdUdAaPTw_Lc3g7sbrBAAA9Uh8&callback=myMap"></script>
 
     
 </asp:Content>

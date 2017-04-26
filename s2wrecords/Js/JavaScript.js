@@ -1,14 +1,15 @@
 ﻿function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(4.8857309, 114.9316692),
-        zoom: 5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"),
-        mapProp);
-
+    var mapProp = { lat: 4.8857309, lng: 114.9316692};
+    var mapgo = new google.maps.Map(document.getElementById("googleMap"),    
+    {
+        zoom: 17,
+        center: mapProp
+    });
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(4.8857309, 114.9316692),
-        map: map
+        position: mapProp,
+        map: mapgo
     });
 }
+  
+   
 
