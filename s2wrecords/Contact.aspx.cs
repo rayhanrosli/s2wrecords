@@ -33,7 +33,7 @@ namespace s2wrecords
 
             msg.Subject = subject.Text;
             msg.IsBodyHtml = true;
-            msg.Body = string.Format("A message from " + name.Text + ",   Email: " + email.Text + ",   Message: " + message.Text);
+            msg.Body = string.Format("A message from " + name.Text + ",   Email: " + email.Text + ",  Subject: " + subject.Text + ", Message: " + message.Text);
 
             try
             {

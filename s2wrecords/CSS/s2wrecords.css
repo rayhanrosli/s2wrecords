@@ -43,11 +43,13 @@ googleMap {
     
 }
 
+/* All footers from all the page are using this color */
 footer {
     color: white;
 
 }
 
+/* This applies to all content that uses <p></p> */
 p {
     color:white;
 }
