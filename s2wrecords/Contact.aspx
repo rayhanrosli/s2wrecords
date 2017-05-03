@@ -16,7 +16,8 @@
 
     <p><asp:Label ID="Label2" runat="server" Text="Email"></asp:Label></p>
     <p><asp:TextBox ID="email" runat="server"></asp:TextBox>
-    <asp:RegularExpressionValidator ID="emailval" runat="server" ErrorMessage="Invalid Email! Please input the correct Email." ControlToValidate="email" ValidationExpression="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"></asp:RegularExpressionValidator>
+        <asp:requiredfieldvalidator runat="server" errormessage="Email Required to proceed." ControlToValidate="email"></asp:requiredfieldvalidator>
+        <asp:RegularExpressionValidator ID="emailval" runat="server" ErrorMessage="Invalid Email! Please input the correct Email." ControlToValidate="email" ValidationExpression="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"></asp:RegularExpressionValidator>
     </p>
     
     <p><asp:Label ID="Label3" runat="server" text="Subject"></asp:Label></p>
