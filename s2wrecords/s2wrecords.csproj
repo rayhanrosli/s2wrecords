@@ -157,6 +157,7 @@
     </Content>
     <Content Include="Product.aspx" />
     <Content Include="Registration.aspx" />
+    <Content Include="reglog.aspx" />
     <Content Include="s2wrecords.Master" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -175,7 +176,9 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -223,6 +226,13 @@
     </Compile>
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reglog.aspx.cs">
+      <DependentUpon>reglog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reglog.aspx.designer.cs">
+      <DependentUpon>reglog.aspx</DependentUpon>
     </Compile>
     <Compile Include="s2wrecords.Master.cs">
       <DependentUpon>s2wrecords.Master</DependentUpon>

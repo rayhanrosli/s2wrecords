@@ -20,13 +20,14 @@ namespace s2wrecords
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            var identityDbContext = new IdentityDbContext("db_1626508_1626508_co5027");
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var userManager = new UserManager<IdentityUser>(userStore);
             var user = userManager.Find(logemail.Text, logpass.Text);
             if (user != null)
             {
-
+                LogUserIn(userManager, user);
+                Server.Transfer("reglog.aspx", true);
             }
             else
             {
