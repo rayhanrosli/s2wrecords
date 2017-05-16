@@ -22,16 +22,17 @@ namespace s2wrecords
         {
             var identityDbContext = new IdentityDbContext("db_1626508_1626508_co5027");
             var userStore = new UserStore<IdentityUser>(identityDbContext);
-            var userManager = new UserManager<IdentityUser>(userStore);
-            var user = userManager.Find(logemail.Text, logpass.Text);
+            var Manager = new UserManager<IdentityUser>(userStore);
+            var user = Manager.Find(logemail.Text, logpass.Text);
+
             if (user != null)
             {
-                LogUserIn(userManager, user);
+                LogUserIn(Manager, user);
                 Server.Transfer("reglog.aspx", true);
             }
             else
             {
-                Label3.Text = "Invalid Email or Password.";
+                Label3.Text = "Invalid User Name or Password.";
             }
 
         }

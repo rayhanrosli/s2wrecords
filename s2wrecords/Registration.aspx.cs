@@ -21,10 +21,17 @@ namespace s2wrecords
             var identityDbContext = new IdentityDbContext("db_1626508_1626508_co5027");
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
+
+            var rolestore = new RoleStore<IdentityRole>(identityDbContext);
+            var rolemanager = new RoleManager<IdentityRole>(rolestore);
+
             var user = new IdentityUser() { UserName = regname.Text, Email = regemail.Text };
             IdentityResult result = manager.Create(user, regpass.Text);
             if (result.Succeeded)
             {
+                IdentityRole endRoleUser = new IdentityRole("endUser");
+                rolemanager.Create(endRoleUser);
+                Server.Transfer("reglog.aspx", true);
 
             }
             else
