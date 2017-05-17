@@ -13,7 +13,7 @@
     <p><asp:TextBox ID="regemail" runat="server"></asp:TextBox></p>
 
     <p><asp:Label ID="Label3" runat="server" Text="Password"></asp:Label></p>
-    <p><asp:TextBox ID="regpass" runat="server"></asp:TextBox></p>
+    <p><asp:TextBox ID="regpass" runat="server" TextMode="Password"></asp:TextBox></p>
 
     <asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" />
         <p><asp:Label ID="Label4" runat="server"></asp:Label></p>

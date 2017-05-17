@@ -40,7 +40,7 @@
      <img src="ProductImages/rollingstoneaftermath.jpg" alt="After Math Album" width="200" height="200"/></a>
 
     <a href="ProductDetails.aspx?Id=11">
-     <img src="ProductImages/tameimpalacovercurrent.jpg" alt="Current Album" width="200" height="200"/></a>
+     <img src="ProductImages/tameimpalacurrent.jpg" alt="Current Album" width="200" height="200"/></a>
 
     <a href="ProductDetails.aspx?Id=12">
      <img src="ProductImages/tdcccover.jpg" alt="Beacon Album" width="200" height="200"/></a>

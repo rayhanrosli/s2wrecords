@@ -8,9 +8,11 @@
 
     <h2>Spin2Win Vinyl Records - Discover Music!</h2>
 
-    <h4>Vinyl Records is the living proof of a good music being stored over a decades ago.</h4>
-     <h4>All products being sold here is authentic and are legit recognized worldwide.</h4>   
-    <h4>We will assure you that quality within the records are suited for your satisfaction!</h4>
+    <p><img src="ProductImages/store.jpg" alt="Record Store" width="400" height="200" /></p>
+
+    <p>Vinyl Records is the living proof of a good music being stored over a decades ago.</p>
+     <p>All products being sold here is authentic and are legit recognized worldwide. </p> 
+    <p>We will assure you that quality within the records are suited for your satisfaction!</p>
    
       
 
