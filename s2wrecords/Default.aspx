@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/s2wrecords.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="s2wrecords.Default" %>
+﻿    <%@ Page Title="" Language="C#" MasterPageFile="~/s2wrecords.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="s2wrecords.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="CSS/s2wrecords.css" rel="stylesheet" type="text/css" />
 </asp:Content>
@@ -11,23 +11,23 @@
    
    <div class="Wrapper">
      
-     <a href="#">
-     <img src="Images/acdccover.png" alt="acdccover" width="200" height="200"/></a>
+     <a href="ProductDetails.aspx?Id=2">
+     <img src="ProductImages/acdccover.png" alt="acdccover" width="200" height="200"/></a>
      
-     <a href="#">
-     <img src="Images/metallicacover.jpg" alt="metallicacover" width="200" height="200" /></a>
+     <a href="ProductDetails.aspx?Id=7">
+     <img src="ProductImages/metallicacover.jpg" alt="metallicacover" width="200" height="200" /></a>
       
-     <a href="#">
-     <img src="Images/greendaycover.png" alt="greendaycover" width="200" height="200" /></a>       
+     <a href="ProductDetails.aspx?Id=6">
+     <img src="ProductImages/greendaycover.png" alt="greendaycover" width="200" height="200" /></a>       
      
-     <a href="#">
-     <img src="Images/rollingstonecover.jpg" alt="rollingstonecover" width="200" height="200" /></a>     
+     <a href="ProductDetails.aspx?Id=10">
+     <img src="ProductImages/rollingstoneaftermath.jpg" alt="rollingstonecover" width="200" height="200" /></a>     
    
-     <a href="#">
-     <img src="Images/pinkfloydcover.jpg" alt="pinkfloydcover" width="200" height="200" /></a>
+     <a href="ProductDetails.aspx?Id=9">
+     <img src="ProductImages/pinkfloydcover.jpg" alt="pinkfloydcover" width="200" height="200" /></a>
  
-     <a href="#">
-     <img src="Images/tdcccover.jpg" alt="tdcccover" width="200" height="200" /></a>
+     <a href="ProductDetails.aspx?Id=12">
+     <img src="ProductImages/tdcccover.jpg" alt="tdcccover" width="200" height="200" /></a>
         
    </div>
 

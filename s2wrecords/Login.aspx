@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Login</h1>
 
-    <p><asp:Label ID="Label1" runat="server" Text="Email"></asp:Label></p>
+    <p><asp:Label ID="Label1" runat="server" Text="User Name"></asp:Label></p>
     <p><asp:TextBox ID="logemail" runat="server"></asp:TextBox></p>
 
     <p><asp:Label ID="Label2" runat="server" Text="Password"></asp:Label></p>
